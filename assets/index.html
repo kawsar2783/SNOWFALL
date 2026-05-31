@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNOWFALL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="image/snow.png" alt="SNOWFALL Logo" class="logo">
+            <h1>SNOWFALL</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-key="home">Home</a></li>
+                <li><a href="#products" data-key="products">Products</a></li>
+                <li><a href="#services" data-key="services">Services</a></li>
+                <li><a href="#about" data-key="about">About</a></li>
+                <li><a href="#contact" data-key="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="language-selector">
+                <button class="lang-btn">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <div class="lang-option" data-lang="en" data-flag="🇺🇸">English</div>
+                    <div class="lang-option" data-lang="pt" data-flag="🇵🇹">Português</div>
+                    <div class="lang-option" data-lang="es" data-flag="🇪🇸">Español</div>
+                    <div class="lang-option" data-lang="fr" data-flag="🇫🇷">Français</div>
+                    <div class="lang-option" data-lang="bn" data-flag="🇧🇩">বাংলা</div>
+                    <div class="lang-option" data-lang="ar" data-flag="🇸🇦">العربية</div>
+                </div>
+            </div>
+            <div class="cart-icon">
+                <a href="#cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+        <button class="mobile-toggle">☰</button>
+    </header>
+
+    <!-- Cover / Hero Section -->
+    <section class="cover">
+        <img src="image/cover.png" alt="cover.png">
+        <div class="cover-text">
+            <h3 data-key="welcome">WELCOME TO SNOWFALL</h3>
+            <p data-key="tagline">Your trusted place for quality products</p>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home">
+        <p data-key="home-text">This is the official website of SNOWFALL.</p>
+    </section>
+
+    <!-- Products Section -->
+    <div id="products-section" style="display: none;">
+        <div class="page-layout">
+            <aside class="category-sidebar">
+                <h3 data-key="category">Category</h3>
+                <ul class="category-list">
+                    <li data-category="mobile"><span data-key="mobile">Mobile</span><span>+</span></li>
+                    <li data-category="tablet"><span data-key="tablet">Tablets & iPads</span><span>+</span></li>
+                    <li data-category="laptop"><span data-key="laptop">Laptop</span><span>+</span></li>
+                    <li data-category="camera"><span data-key="camera">Camera</span><span>+</span></li>
+                    <li data-category="gaming"><span data-key="gaming">Gaming</span><span>+</span></li>
+                    <li data-category="drones"><span data-key="drones">Drones</span><span>+</span></li>
+                    <li data-category="headphone"><span data-key="headphone">Headphone & Speaker</span><span>+</span></li>
+                    <li data-category="charger"><span data-key="charger">Charger</span><span>+</span></li>
+                    <li data-category="watch"><span data-key="watch">Watch</span><span>+</span></li>
+                </ul>
+            </aside>
+
+            <main id="products">
+                <h2 data-key="featured-products">Our Featured Products</h2>
+                
+                <div class="products-container" id="default-products">
+                    <div class="product-card">
+                        <img src="image/products/MacBook Air M2 Silver .png" alt="Featured Product" class="product-image">
+                        <h3 data-key="featured">Featured Product</h3>
+                        <p data-key="featured-desc">Browse products by selecting categories from the sidebar.</p>
+                        <p class="price">$1900.00</p>
+                        <button class="cart-btn" data-product="Featured Product" data-price="1900">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== MOBILE CATEGORY - 15 PRODUCTS ========== -->
+                <div class="products-container category-products" id="mobile-products" style="display: none;">
+                    <!-- iPhone 15 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/iPhone 15.png" alt="iPhone 15 Pro" class="product-image">
+                        <h3 data-key="iphone-15-pro">iPhone 15 Pro</h3>
+                        <p data-key="iphone-15-pro-desc">Latest Apple smartphone with A17 Pro chip, titanium design, and advanced camera system.</p>
+                        <p class="price">$999.00</p>
+                        <button class="cart-btn" data-product="iPhone 15 Pro" data-price="999">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- iPhone 17 -->
+                    <div class="product-card">
+                        <img src="image/products/iphone17.png" alt="iPhone 17" class="product-image">
+                        <h3 data-key="iphone-17">iPhone 17</h3>
+                        <p data-key="iphone-17-desc">Premium phone with advanced AI features and powerful processor.</p>
+                        <p class="price">$1299.00</p>
+                        <button class="cart-btn" data-product="iPhone 17" data-price="1299">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- iPhone 16 -->
+                    <div class="product-card">
+                        <img src="image/products/iPhone16.png" alt="iPhone 16" class="product-image">
+                        <h3 data-key="iphone-16">iPhone 16</h3>
+                        <p data-key="iphone-16-desc">AI-powered smartphone with advanced features and best-in-class camera.</p>
+                        <p class="price">$799.00</p>
+                        <button class="cart-btn" data-product="iPhone 16" data-price="799">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- iPhone 14 -->
+                    <div class="product-card">
+                        <img src="image/products/iphone14.png" alt="iPhone 14" class="product-image">
+                        <h3 data-key="iphone-14">iPhone 14</h3>
+                        <p data-key="iphone-14-desc">Powerful smartphone with amazing features and great value.</p>
+                        <p class="price">$499.00</p>
+                        <button class="cart-btn" data-product="iPhone 14" data-price="499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Galaxy S24 Ultra -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy S24 Ultra.png" alt="Samsung Galaxy S24 Ultra" class="product-image">
+                        <h3 data-key="samsung-s24-ultra">Samsung Galaxy S24 Ultra</h3>
+                        <p data-key="samsung-s24-ultra-desc">Dynamic AMOLED 2X display, 200MP camera, and Snapdragon 8 Gen 3 processor.</p>
+                        <p class="price">$1199.00</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy S24 Ultra" data-price="1199">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Galaxy S25 Ultra -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy S25 Ultra.png" alt="Samsung Galaxy S25 Ultra" class="product-image">
+                        <h3 data-key="samsung-s25-ultra">Samsung Galaxy S25 Ultra</h3>
+                        <p data-key="samsung-s25-ultra-desc">Next-gen flagship with revolutionary AI features and cutting-edge camera technology.</p>
+                        <p class="price">$1399.00</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy S25 Ultra" data-price="1399">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Galaxy Z Fold 5 -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy Z Fold 5.png" alt="Samsung Galaxy Z Fold 5" class="product-image">
+                        <h3 data-key="samsung-z-fold-5">Samsung Galaxy Z Fold 5</h3>
+                        <p data-key="samsung-z-fold-5-desc">Foldable display, multitasking powerhouse, and premium design.</p>
+                        <p class="price">$1599.00</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy Z Fold 5" data-price="1599">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Galaxy Z Flip 5 -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy Z Flip 5.png" alt="Samsung Galaxy Z Flip 5" class="product-image">
+                        <h3 data-key="samsung-z-flip-5">Samsung Galaxy Z Flip 5</h3>
+                        <p data-key="samsung-z-flip-5-desc">Compact foldable with large cover screen and versatile camera.</p>
+                        <p class="price">$899.00</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy Z Flip 5" data-price="899">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Google Pixel 8 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/Google Pixel 8 Pro.png" alt="Google Pixel 8 Pro" class="product-image">
+                        <h3 data-key="google-pixel-8-pro">Google Pixel 8 Pro</h3>
+                        <p data-key="google-pixel-8-pro-desc">Advanced AI features, exceptional camera, and pure Android experience with Tensor G3.</p>
+                        <p class="price">$899.00</p>
+                        <button class="cart-btn" data-product="Google Pixel 8 Pro" data-price="899">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Google Pixel 10 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/Google Pixel 10 Pro.png" alt="Google Pixel 10 Pro" class="product-image">
+                        <h3 data-key="google-pixel-10-pro">Google Pixel 10 Pro</h3>
+                        <p data-key="google-pixel-10-pro-desc">Next-gen AI capabilities with revolutionary Tensor G5 chip and groundbreaking camera.</p>
+                        <p class="price">$1099.00</p>
+                        <button class="cart-btn" data-product="Google Pixel 10 Pro" data-price="1099">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- OnePlus 12 -->
+                    <div class="product-card">
+                        <img src="image/products/OnePlus 12.png" alt="OnePlus 12" class="product-image">
+                        <h3 data-key="oneplus-12">OnePlus 12</h3>
+                        <p data-key="oneplus-12-desc">120Hz ProXDR display, 100W fast charging, and Snapdragon 8 Gen 3.</p>
+                        <p class="price">$699.00</p>
+                        <button class="cart-btn" data-product="OnePlus 12" data-price="699">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- OnePlus Open -->
+                    <div class="product-card">
+                        <img src="image/products/OnePlus Open.png" alt="OnePlus Open" class="product-image">
+                        <h3 data-key="oneplus-open">OnePlus Open</h3>
+                        <p data-key="oneplus-open-desc">Foldable phone with flagship specs and multitasking capabilities.</p>
+                        <p class="price">$1499.00</p>
+                        <button class="cart-btn" data-product="OnePlus Open" data-price="1499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Xiaomi 14 Ultra -->
+                    <div class="product-card">
+                        <img src="image/products/Xiaomi 14 Ultra.png" alt="Xiaomi 14 Ultra" class="product-image">
+                        <h3 data-key="xiaomi-14-ultra">Xiaomi 14 Ultra</h3>
+                        <p data-key="xiaomi-14-ultra-desc">Leica professional cameras, 90W fast charging, and stunning display technology.</p>
+                        <p class="price">$649.00</p>
+                        <button class="cart-btn" data-product="Xiaomi 14 Ultra" data-price="649">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Xiaomi 13 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/Xiaomi 13 Pro.png" alt="Xiaomi 13 Pro" class="product-image">
+                        <h3 data-key="xiaomi-13-pro">Xiaomi 13 Pro</h3>
+                        <p data-key="xiaomi-13-pro-desc">Leica camera system, Snapdragon 8 Gen 2, and premium design.</p>
+                        <p class="price">$549.00</p>
+                        <button class="cart-btn" data-product="Xiaomi 13 Pro" data-price="549">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Sony Xperia 1 VI -->
+                    <div class="product-card">
+                        <img src="image/products/Sony Xperia 1 VI.png" alt="Sony Xperia 1 VI" class="product-image">
+                        <h3 data-key="sony-xperia-1-vi">Sony Xperia 1 VI</h3>
+                        <p data-key="sony-xperia-1-vi-desc">4K OLED display, professional camera system, and multimedia excellence.</p>
+                        <p class="price">$1099.00</p>
+                        <button class="cart-btn" data-product="Sony Xperia 1 VI" data-price="1099">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Nothing Phone 2 -->
+                    <div class="product-card">
+                        <img src="image/products/Nothing Phone 2.png" alt="Nothing Phone 2" class="product-image">
+                        <h3 data-key="nothing-phone-2">Nothing Phone 2</h3>
+                        <p data-key="nothing-phone-2-desc">Unique glyph interface, clean design, and innovative user experience.</p>
+                        <p class="price">$549.00</p>
+                        <button class="cart-btn" data-product="Nothing Phone 2" data-price="549">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== TABLETS CATEGORY - 10 PRODUCTS ========== -->
+                <div class="products-container category-products" id="tablet-products" style="display: none;">
+                    <!-- iPad Pro M2 -->
+                    <div class="product-card">
+                        <img src="image/products/iPad Pro 12.9 M2.png" alt="iPad Pro 12.9 M2" class="product-image">
+                        <h3 data-key="ipad-pro-m2">iPad Pro 12.9" M2</h3>
+                        <p data-key="ipad-pro-m2-desc">M2 chip, Liquid Retina XDR display, 5G, and Apple Pencil hover experience.</p>
+                        <p class="price">$1099.00</p>
+                        <button class="cart-btn" data-product="iPad Pro 12.9 M2" data-price="1099">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- iPad Air M1 -->
+                    <div class="product-card">
+                        <img src="image/products/iPad Air M1.png" alt="iPad Air M1" class="product-image">
+                        <h3 data-key="ipad-air-m1">iPad Air M1</h3>
+                        <p data-key="ipad-air-m1-desc">M1 chip, 10.9" Liquid Retina display, Touch ID, and ultra-wide front camera.</p>
+                        <p class="price">$599.00</p>
+                        <button class="cart-btn" data-product="iPad Air M1" data-price="599">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- iPad 10th Gen -->
+                    <div class="product-card">
+                        <img src="image/products/iPad 10th Gen.png" alt="iPad 10th Gen" class="product-image">
+                        <h3 data-key="ipad-10th-gen">iPad 10th Gen</h3>
+                        <p data-key="ipad-10th-gen-desc">A14 Bionic chip, 10.9" Liquid Retina display, USB-C, and landscape camera.</p>
+                        <p class="price">$449.00</p>
+                        <button class="cart-btn" data-product="iPad 10th Gen" data-price="449">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- iPad Mini 6 -->
+                    <div class="product-card">
+                        <img src="image/products/iPad Mini 6.png" alt="iPad Mini 6" class="product-image">
+                        <h3 data-key="ipad-mini-6">iPad Mini 6</h3>
+                        <p data-key="ipad-mini-6-desc">A15 Bionic chip, 8.3" Liquid Retina display, 5G, and Apple Pencil 2 support.</p>
+                        <p class="price">$499.00</p>
+                        <button class="cart-btn" data-product="iPad Mini 6" data-price="499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Tab S9 Ultra -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Tab S9 Ultra.png" alt="Samsung Tab S9 Ultra" class="product-image">
+                        <h3 data-key="samsung-tab-s9-ultra">Samsung Tab S9 Ultra</h3>
+                        <p data-key="samsung-tab-s9-ultra-desc">14.6" Dynamic AMOLED 2X, Snapdragon 8 Gen 2, IP68 water resistance.</p>
+                        <p class="price">$1199.99</p>
+                        <button class="cart-btn" data-product="Samsung Tab S9 Ultra" data-price="1199.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Tab S9+ -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Tab S9+.png" alt="Samsung Tab S9+" class="product-image">
+                        <h3 data-key="samsung-tab-s9-plus">Samsung Tab S9+</h3>
+                        <p data-key="samsung-tab-s9-plus-desc">12.4" Dynamic AMOLED 2X, Snapdragon 8 Gen 2, and enhanced S Pen experience.</p>
+                        <p class="price">$999.99</p>
+                        <button class="cart-btn" data-product="Samsung Tab S9+" data-price="999.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Tab S9 -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Tab S9.png" alt="Samsung Tab S9" class="product-image">
+                        <h3 data-key="samsung-tab-s9">Samsung Tab S9</h3>
+                        <p data-key="samsung-tab-s9-desc">11" Dynamic AMOLED 2X, Snapdragon 8 Gen 2, and IP67 water resistance.</p>
+                        <p class="price">$799.99</p>
+                        <button class="cart-btn" data-product="Samsung Tab S9" data-price="799.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Surface Pro 9 -->
+                    <div class="product-card">
+                        <img src="image/products/Surface Pro 9.png" alt="Surface Pro 9" class="product-image">
+                        <h3 data-key="surface-pro-9">Surface Pro 9</h3>
+                        <p data-key="surface-pro-9-desc">13" touchscreen, Intel Evo platform, up to 15.5 hours battery life.</p>
+                        <p class="price">$999.99</p>
+                        <button class="cart-btn" data-product="Surface Pro 9" data-price="999.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Amazon Fire Max 11 -->
+                    <div class="product-card">
+                        <img src="image/products/Amazon Fire Max 11.png" alt="Amazon Fire Max 11" class="product-image">
+                        <h3 data-key="amazon-fire-max-11">Amazon Fire Max 11</h3>
+                        <p data-key="amazon-fire-max-11-desc">11" display, octa-core processor, and all-day battery life.</p>
+                        <p class="price">$229.99</p>
+                        <button class="cart-btn" data-product="Amazon Fire Max 11" data-price="229.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Lenovo Tab P12 -->
+                    <div class="product-card">
+                        <img src="image/products/Lenovo Tab P12.png" alt="Lenovo Tab P12" class="product-image">
+                        <h3 data-key="lenovo-tab-p12">Lenovo Tab P12</h3>
+                        <p data-key="lenovo-tab-p12-desc">12.7" 3K display, MediaTek Dimensity 7050, and JBL speakers.</p>
+                        <p class="price">$399.99</p>
+                        <button class="cart-btn" data-product="Lenovo Tab P12" data-price="399.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== LAPTOP CATEGORY - 10 PRODUCTS ========== -->
+                <div class="products-container category-products" id="laptop-products" style="display: none;">
+                    <!-- MacBook Pro 16 -->
+                    <div class="product-card">
+                        <img src="image/products/MacBook Pro 16.png" alt="MacBook Pro 16" class="product-image">
+                        <h3 data-key="macbook-pro-16">MacBook Pro 16</h3>
+                        <p data-key="macbook-pro-16-desc">M3 Pro chip, 36GB RAM, 1TB SSD, and stunning Liquid Retina XDR display.</p>
+                        <p class="price">$2499.00</p>
+                        <button class="cart-btn" data-product="MacBook Pro 16" data-price="2499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- MacBook Air M2 -->
+                    <div class="product-card">
+                        <img src="image/products/MacBook Air M2.png" alt="MacBook Air M2" class="product-image">
+                        <h3 data-key="macbook-air-m2">MacBook Air M2</h3>
+                        <p data-key="macbook-air-m2-desc">Ultra-thin design, M2 chip, all-day battery life, and brilliant display.</p>
+                        <p class="price">$1199.00</p>
+                        <button class="cart-btn" data-product="MacBook Air M2" data-price="1199">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Dell XPS 15 -->
+                    <div class="product-card">
+                        <img src="image/products/Dell XPS 15.png" alt="Dell XPS 15" class="product-image">
+                        <h3 data-key="dell-xps-15">Dell XPS 15</h3>
+                        <p data-key="dell-xps-15-desc">Intel Core i9, 32GB RAM, NVIDIA RTX 4060, and 4K OLED display.</p>
+                        <p class="price">$1899.00</p>
+                        <button class="cart-btn" data-product="Dell XPS 15" data-price="1899">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Dell XPS 13 -->
+                    <div class="product-card">
+                        <img src="image/products/Dell XPS 13.png" alt="Dell XPS 13" class="product-image">
+                        <h3 data-key="dell-xps-13">Dell XPS 13</h3>
+                        <p data-key="dell-xps-13-desc">Ultra-portable premium laptop with InfinityEdge display and Intel Core i7.</p>
+                        <p class="price">$1299.00</p>
+                        <button class="cart-btn" data-product="Dell XPS 13" data-price="1299">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Lenovo ThinkPad X1 -->
+                    <div class="product-card">
+                        <img src="image/products/Lenovo ThinkPad X1.png" alt="Lenovo ThinkPad X1" class="product-image">
+                        <h3 data-key="lenovo-thinkpad-x1">Lenovo ThinkPad X1</h3>
+                        <p data-key="lenovo-thinkpad-x1-desc">Business laptop with Intel vPro, 32GB RAM, and premium build quality.</p>
+                        <p class="price">$1699.00</p>
+                        <button class="cart-btn" data-product="Lenovo ThinkPad X1" data-price="1699">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- ASUS ROG Zephyrus -->
+                    <div class="product-card">
+                        <img src="image/products/ASUS ROG Zephyrus.png" alt="ASUS ROG Zephyrus" class="product-image">
+                        <h3 data-key="asus-rog-zephyrus">ASUS ROG Zephyrus</h3>
+                        <p data-key="asus-rog-zephyrus-desc">Gaming laptop with RTX 4080, 240Hz display, and advanced cooling.</p>
+                        <p class="price">$2199.00</p>
+                        <button class="cart-btn" data-product="ASUS ROG Zephyrus" data-price="2199">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- HP Spectre x360 -->
+                    <div class="product-card">
+                        <img src="image/products/HP Spectre x360.png" alt="HP Spectre x360" class="product-image">
+                        <h3 data-key="hp-spectre-x360">HP Spectre x360</h3>
+                        <p data-key="hp-spectre-x360-desc">Convertible laptop with OLED display, Intel Core i7, and premium design.</p>
+                        <p class="price">$1499.00</p>
+                        <button class="cart-btn" data-product="HP Spectre x360" data-price="1499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Microsoft Surface Laptop 5 -->
+                    <div class="product-card">
+                        <img src="image/products/Microsoft Surface Laptop 5.png" alt="Microsoft Surface Laptop 5" class="product-image">
+                        <h3 data-key="microsoft-surface-laptop-5">Microsoft Surface Laptop 5</h3>
+                        <p data-key="microsoft-surface-laptop-5-desc">Elegant design, touchscreen display, and excellent portability.</p>
+                        <p class="price">$1299.00</p>
+                        <button class="cart-btn" data-product="Microsoft Surface Laptop 5" data-price="1299">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Razer Blade 15 -->
+                    <div class="product-card">
+                        <img src="image/products/Razer Blade 15.png" alt="Razer Blade 15" class="product-image">
+                        <h3 data-key="razer-blade-15">Razer Blade 15</h3>
+                        <p data-key="razer-blade-15-desc">Ultra-slim gaming laptop with RTX 4070 and 240Hz QHD display.</p>
+                        <p class="price">$2399.00</p>
+                        <button class="cart-btn" data-product="Razer Blade 15" data-price="2399">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Acer Predator Helios -->
+                    <div class="product-card">
+                        <img src="image/products/Acer Predator Helios.png" alt="Acer Predator Helios" class="product-image">
+                        <h3 data-key="acer-predator-helios">Acer Predator Helios</h3>
+                        <p data-key="acer-predator-helios-desc">Powerful gaming laptop with high-performance cooling and RGB keyboard.</p>
+                        <p class="price">$1599.00</p>
+                        <button class="cart-btn" data-product="Acer Predator Helios" data-price="1599">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== CAMERA CATEGORY - 15 PRODUCTS ========== -->
+                <div class="products-container category-products" id="camera-products" style="display: none;">
+                    <!-- Sony A7 IV -->
+                    <div class="product-card">
+                        <img src="image/products/Sony A7 IV.png" alt="Sony A7 IV" class="product-image">
+                        <h3 data-key="sony-a7-iv">Sony A7 IV</h3>
+                        <p data-key="sony-a7-iv-desc">Full-frame mirrorless camera with 33MP sensor and 4K 60p video recording.</p>
+                        <p class="price">$2499.00</p>
+                        <button class="cart-btn" data-product="Sony A7 IV" data-price="2499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Sony A1 -->
+                    <div class="product-card">
+                        <img src="image/products/Sony A1.png" alt="Sony A1" class="product-image">
+                        <h3 data-key="sony-a1">Sony A1</h3>
+                        <p data-key="sony-a1-desc">Flagship 50MP camera with 8K video, 30fps burst shooting, and incredible speed.</p>
+                        <p class="price">$6499.00</p>
+                        <button class="cart-btn" data-product="Sony A1" data-price="6499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Sony A7S III -->
+                    <div class="product-card">
+                        <img src="image/products/Sony A7S III.png" alt="Sony A7S III" class="product-image">
+                        <h3 data-key="sony-a7s-iii">Sony A7S III</h3>
+                        <p data-key="sony-a7s-iii-desc">Low-light champion with 12MP sensor and 4K 120p video for professionals.</p>
+                        <p class="price">$3499.00</p>
+                        <button class="cart-btn" data-product="Sony A7S III" data-price="3499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Sony ZV-E1 -->
+                    <div class="product-card">
+                        <img src="image/products/Sony ZV-E1.png" alt="Sony ZV-E1" class="product-image">
+                        <h3 data-key="sony-zv-e1">Sony ZV-E1</h3>
+                        <p data-key="sony-zv-e1-desc">Compact vlogging camera with full-frame sensor and AI autofocus.</p>
+                        <p class="price">$2199.00</p>
+                        <button class="cart-btn" data-product="Sony ZV-E1" data-price="2199">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Canon EOS R5 -->
+                    <div class="product-card">
+                        <img src="image/products/Canon EOS R5.png" alt="Canon EOS R5" class="product-image">
+                        <h3 data-key="canon-eos-r5">Canon EOS R5</h3>
+                        <p data-key="canon-eos-r5-desc">45MP full-frame sensor, 8K RAW video, and advanced Dual Pixel AF II.</p>
+                        <p class="price">$3899.00</p>
+                        <button class="cart-btn" data-product="Canon EOS R5" data-price="3899">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Canon EOS R6 II -->
+                    <div class="product-card">
+                        <img src="image/products/Canon EOS R6 Mark II.png" alt="Canon EOS R6 Mark II" class="product-image">
+                        <h3 data-key="canon-eos-r6-ii">Canon EOS R6 Mark II</h3>
+                        <p data-key="canon-eos-r6-ii-desc">24MP full-frame sensor, 40fps burst, and excellent low-light performance.</p>
+                        <p class="price">$2499.00</p>
+                        <button class="cart-btn" data-product="Canon EOS R6 Mark II" data-price="2499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Canon EOS R3 -->
+                    <div class="product-card">
+                        <img src="image/products/Canon EOS R3.png" alt="Canon EOS R3" class="product-image">
+                        <h3 data-key="canon-eos-r3">Canon EOS R3</h3>
+                        <p data-key="canon-eos-r3-desc">Professional sports camera with 24MP stacked sensor and eye-controlled AF.</p>
+                        <p class="price">$5999.00</p>
+                        <button class="cart-btn" data-product="Canon EOS R3" data-price="5999">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Canon EOS R100 -->
+                    <div class="product-card">
+                        <img src="image/products/Canon EOS R100.png" alt="Canon EOS R100" class="product-image">
+                        <h3 data-key="canon-eos-r100">Canon EOS R100</h3>
+                        <p data-key="canon-eos-r100-desc">Entry-level mirrorless camera perfect for beginners and content creators.</p>
+                        <p class="price">$799.00</p>
+                        <button class="cart-btn" data-product="Canon EOS R100" data-price="799">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Nikon Z8 -->
+                    <div class="product-card">
+                        <img src="image/products/Nikon Z8.png" alt="Nikon Z8" class="product-image">
+                        <h3 data-key="nikon-z8">Nikon Z8</h3>
+                        <p data-key="nikon-z8-desc">Compact powerhouse with 45.7MP sensor, 8K video, and flagship features.</p>
+                        <p class="price">$3599.00</p>
+                        <button class="cart-btn" data-product="Nikon Z8" data-price="3599">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Nikon Z9 -->
+                    <div class="product-card">
+                        <img src="image/products/Nikon Z9.png" alt="Nikon Z9" class="product-image">
+                        <h3 data-key="nikon-z9">Nikon Z9</h3>
+                        <p data-key="nikon-z9-desc">Flagship professional camera with stacked CMOS sensor and 8K video.</p>
+                        <p class="price">$5499.00</p>
+                        <button class="cart-btn" data-product="Nikon Z9" data-price="5499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Nikon Z6 III -->
+                    <div class="product-card">
+                        <img src="image/products/Nikon Z6 III.png" alt="Nikon Z6 III" class="product-image">
+                        <h3 data-key="nikon-z6-iii">Nikon Z6 III</h3>
+                        <p data-key="nikon-z6-iii-desc">Versatile full-frame camera with 24.5MP sensor and 6K video recording.</p>
+                        <p class="price">$2499.00</p>
+                        <button class="cart-btn" data-product="Nikon Z6 III" data-price="2499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Fujifilm X-T5 -->
+                    <div class="product-card">
+                        <img src="image/products/Fujifilm X-T5.png" alt="Fujifilm X-T5" class="product-image">
+                        <h3 data-key="fujifilm-xt5">Fujifilm X-T5</h3>
+                        <p data-key="fujifilm-xt5-desc">40MP APS-C sensor with film simulations and classic dial design.</p>
+                        <p class="price">$1699.00</p>
+                        <button class="cart-btn" data-product="Fujifilm X-T5" data-price="1699">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Fujifilm X100VI -->
+                    <div class="product-card">
+                        <img src="image/products/Fujifilm X100VI.png" alt="Fujifilm X100VI" class="product-image">
+                        <h3 data-key="fujifilm-x100vi">Fujifilm X100VI</h3>
+                        <p data-key="fujifilm-x100vi-desc">Premium compact camera with fixed 23mm lens and 40MP sensor.</p>
+                        <p class="price">$1599.00</p>
+                        <button class="cart-btn" data-product="Fujifilm X100VI" data-price="1599">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Fujifilm GFX100 II -->
+                    <div class="product-card">
+                        <img src="image/products/Fujifilm GFX100 II.png" alt="Fujifilm GFX100 II" class="product-image">
+                        <h3 data-key="fujifilm-gfx100-ii">Fujifilm GFX100 II</h3>
+                        <p data-key="fujifilm-gfx100-ii-desc">Medium format camera with 102MP sensor and 8K video capabilities.</p>
+                        <p class="price">$7499.00</p>
+                        <button class="cart-btn" data-product="Fujifilm GFX100 II" data-price="7499">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Panasonic S5 II -->
+                    <div class="product-card">
+                        <img src="image/products/Panasonic Lumix S5 II.png" alt="Panasonic Lumix S5 II" class="product-image">
+                        <h3 data-key="panasonic-s5-ii">Panasonic Lumix S5 II</h3>
+                        <p data-key="panasonic-s5-ii-desc">Full-frame hybrid camera with phase detection AF and 6K video.</p>
+                        <p class="price">$1999.00</p>
+                        <button class="cart-btn" data-product="Panasonic Lumix S5 II" data-price="1999">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== GAMING CATEGORY - 10 PRODUCTS ========== -->
+                <div class="products-container category-products" id="gaming-products" style="display: none;">
+                    <!-- PlayStation 5 -->
+                    <div class="product-card">
+                        <img src="image/products/PlayStation 5.png" alt="PlayStation 5" class="product-image">
+                        <h3 data-key="ps5">PlayStation 5</h3>
+                        <p data-key="ps5-desc">Ultra-fast SSD, 4K gaming, haptic feedback, and adaptive triggers.</p>
+                        <p class="price">$499.99</p>
+                        <button class="cart-btn" data-product="PlayStation 5" data-price="499.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Xbox Series X -->
+                    <div class="product-card">
+                        <img src="image/products/Xbox Series X.png" alt="Xbox Series X" class="product-image">
+                        <h3 data-key="xbox-series-x">Xbox Series X</h3>
+                        <p data-key="xbox-series-x-desc">12 teraflops, quick resume, 4K gaming, and Game Pass ultimate.</p>
+                        <p class="price">$499.99</p>
+                        <button class="cart-btn" data-product="Xbox Series X" data-price="499.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Nintendo Switch OLED -->
+                    <div class="product-card">
+                        <img src="image/products/Nintendo Switch OLED.png" alt="Nintendo Switch OLED" class="product-image">
+                        <h3 data-key="nintendo-switch-oled">Nintendo Switch OLED</h3>
+                        <p data-key="nintendo-switch-oled-desc">7" OLED screen, vibrant colors, and versatile gaming modes.</p>
+                        <p class="price">$349.99</p>
+                        <button class="cart-btn" data-product="Nintendo Switch OLED" data-price="349.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Logitech G Pro X -->
+                    <div class="product-card">
+                        <img src="image/products/Logitech G Pro X.png" alt="Logitech G Pro X" class="product-image">
+                        <h3 data-key="logitech-g-pro-x">Logitech G Pro X</h3>
+                        <p data-key="logitech-g-pro-x-desc">Hero 25K sensor, ultra-lightweight, and pro-grade performance.</p>
+                        <p class="price">$129.99</p>
+                        <button class="cart-btn" data-product="Logitech G Pro X" data-price="129.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Razer DeathAdder V3 -->
+                    <div class="product-card">
+                        <img src="image/products/Razer DeathAdder V3.png" alt="Razer DeathAdder V3" class="product-image">
+                        <h3 data-key="razer-deathadder-v3">Razer DeathAdder V3</h3>
+                        <p data-key="razer-deathadder-v3-desc">Focus Pro 30K sensor, optical switches, and ergonomic design.</p>
+                        <p class="price">$149.99</p>
+                        <button class="cart-btn" data-product="Razer DeathAdder V3" data-price="149.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- SteelSeries Apex Pro -->
+                    <div class="product-card">
+                        <img src="image/products/SteelSeries Apex Pro.png" alt="SteelSeries Apex Pro" class="product-image">
+                        <h3 data-key="steelseries-apex-pro">SteelSeries Apex Pro</h3>
+                        <p data-key="steelseries-apex-pro-desc">OmniPoint adjustable switches, OLED display, and magnetic wrist rest.</p>
+                        <p class="price">$199.99</p>
+                        <button class="cart-btn" data-product="SteelSeries Apex Pro" data-price="199.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- SteelSeries Arctis Nova Pro -->
+                    <div class="product-card">
+                        <img src="image/products/SteelSeries Arctis Nova Pro.png" alt="SteelSeries Arctis Nova Pro" class="product-image">
+                        <h3 data-key="steelseries-arctis-nova-pro">SteelSeries Arctis Nova Pro</h3>
+                        <p data-key="steelseries-arctis-nova-pro-desc">Premium gaming headset with active noise cancellation and Hi-Res audio.</p>
+                        <p class="price">$249.99</p>
+                        <button class="cart-btn" data-product="SteelSeries Arctis Nova Pro" data-price="249.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Xbox Elite Controller -->
+                    <div class="product-card">
+                        <img src="image/products/Xbox Elite Controller Series 2.png" alt="Xbox Elite Controller" class="product-image">
+                        <h3 data-key="xbox-elite-controller">Xbox Elite Controller Series 2</h3>
+                        <p data-key="xbox-elite-controller-desc">Adjustable tension thumbsticks, wrap-around rubberized grip.</p>
+                        <p class="price">$179.99</p>
+                        <button class="cart-btn" data-product="Xbox Elite Controller" data-price="179.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Secretlab Titan Evo -->
+                    <div class="product-card">
+                        <img src="image/products/Secretlab Titan Evo.png" alt="Secretlab Titan Evo" class="product-image">
+                        <h3 data-key="secretlab-titan-evo">Secretlab Titan Evo</h3>
+                        <p data-key="secretlab-titan-evo-desc">Premium gaming chair with magnetic head pillow and 4-way lumbar support.</p>
+                        <p class="price">$549.00</p>
+                        <button class="cart-btn" data-product="Secretlab Titan Evo" data-price="549">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Alienware AW3423DW -->
+                    <div class="product-card">
+                        <img src="image/products/Alienware AW3423DW.png" alt="Alienware AW3423DW" class="product-image">
+                        <h3 data-key="alienware-aw3423dw">Alienware AW3423DW</h3>
+                        <p data-key="alienware-aw3423dw-desc">34" QD-OLED gaming monitor, 175Hz refresh rate, G-Sync Ultimate.</p>
+                        <p class="price">$1299.99</p>
+                        <button class="cart-btn" data-product="Alienware AW3423DW" data-price="1299.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== DRONES CATEGORY - 10 PRODUCTS ========== -->
+                <div class="products-container category-products" id="drones-products" style="display: none;">
+                    <!-- DJI Mavic 3 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Mavic 3 Pro.png" alt="DJI Mavic 3 Pro" class="product-image">
+                        <h3 data-key="dji-mavic-3-pro">DJI Mavic 3 Pro</h3>
+                        <p data-key="dji-mavic-3-pro-desc">Triple-camera system, 46-min flight time, and omnidirectional obstacle sensing.</p>
+                        <p class="price">$2199.00</p>
+                        <button class="cart-btn" data-product="DJI Mavic 3 Pro" data-price="2199">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Air 3 -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Air 3.png" alt="DJI Air 3" class="product-image">
+                        <h3 data-key="dji-air-3">DJI Air 3</h3>
+                        <p data-key="dji-air-3-desc">Dual-primary cameras, 46-min flight time, and 360° obstacle sensing.</p>
+                        <p class="price">$1099.00</p>
+                        <button class="cart-btn" data-product="DJI Air 3" data-price="1099">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Mini 4 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Mini 4 Pro.png" alt="DJI Mini 4 Pro" class="product-image">
+                        <h3 data-key="dji-mini-4-pro">DJI Mini 4 Pro</h3>
+                        <p data-key="dji-mini-4-pro-desc">Under 249g, 4K/60fps HDR, omnidirectional obstacle sensing.</p>
+                        <p class="price">$759.00</p>
+                        <button class="cart-btn" data-product="DJI Mini 4 Pro" data-price="759">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Avata -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Avata.png" alt="DJI Avata" class="product-image">
+                        <h3 data-key="dji-avata">DJI Avata</h3>
+                        <p data-key="dji-avata-desc">FPV drone with propeller guards, 4K stabilization, and immersive flight.</p>
+                        <p class="price">$899.00</p>
+                        <button class="cart-btn" data-product="DJI Avata" data-price="899">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- GoPro Hero 12 -->
+                    <div class="product-card">
+                        <img src="image/products/GoPro Hero 12 Black.png" alt="GoPro Hero 12 Black" class="product-image">
+                        <h3 data-key="gopro-hero-12">GoPro Hero 12 Black</h3>
+                        <p data-key="gopro-hero-12-desc">5.3K video, HyperSmooth 6.0 stabilization, and waterproof design.</p>
+                        <p class="price">$399.99</p>
+                        <button class="cart-btn" data-product="GoPro Hero 12 Black" data-price="399.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Osmo Action 4 -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Osmo Action 4.png" alt="DJI Osmo Action 4" class="product-image">
+                        <h3 data-key="dji-osmo-action-4">DJI Osmo Action 4</h3>
+                        <p data-key="dji-osmo-action-4-desc">1/1.3" sensor, 4K/120fps, RockSteady 3.0 stabilization.</p>
+                        <p class="price">$329.00</p>
+                        <button class="cart-btn" data-product="DJI Osmo Action 4" data-price="329">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Insta360 X3 -->
+                    <div class="product-card">
+                        <img src="image/products/Insta360 X3.png" alt="Insta360 X3" class="product-image">
+                        <h3 data-key="insta360-x3">Insta360 X3</h3>
+                        <p data-key="insta360-x3-desc">360° 5.7K video, 72MP photos, and invisible selfie stick effect.</p>
+                        <p class="price">$449.99</p>
+                        <button class="cart-btn" data-product="Insta360 X3" data-price="449.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Osmo Mobile 6 -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Osmo Mobile 6.png" alt="DJI Osmo Mobile 6" class="product-image">
+                        <h3 data-key="dji-osmo-mobile-6">DJI Osmo Mobile 6</h3>
+                        <p data-key="dji-osmo-mobile-6-desc">Smartphone gimbal with built-in extension rod and ActiveTrack 5.0.</p>
+                        <p class="price">$159.00</p>
+                        <button class="cart-btn" data-product="DJI Osmo Mobile 6" data-price="159">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Goggles 2 -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Goggles 2.png" alt="DJI Goggles 2" class="product-image">
+                        <h3 data-key="dji-goggles-2">DJI Goggles 2</h3>
+                        <p data-key="dji-goggles-2-desc">Micro-OLED displays, 1080p, and low-latency transmission.</p>
+                        <p class="price">$649.00</p>
+                        <button class="cart-btn" data-product="DJI Goggles 2" data-price="649">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- DJI Fly More Kit -->
+                    <div class="product-card">
+                        <img src="image/products/DJI Fly More Kit.png" alt="DJI Fly More Kit" class="product-image">
+                        <h3 data-key="dji-fly-more-kit">DJI Fly More Kit</h3>
+                        <p data-key="dji-fly-more-kit-desc">Extra batteries, charging hub, propellers, and carrying bag.</p>
+                        <p class="price">$279.00</p>
+                        <button class="cart-btn" data-product="DJI Fly More Kit" data-price="279">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== HEADPHONE CATEGORY - 10 PRODUCTS ========== -->
+                <div class="products-container category-products" id="headphone-products" style="display: none;">
+                    <!-- Sony WH-1000XM5 -->
+                    <div class="product-card">
+                        <img src="image/products/Sony WH-1000XM5.png" alt="Sony WH-1000XM5" class="product-image">
+                        <h3 data-key="sony-wh-1000xm5">Sony WH-1000XM5</h3>
+                        <p data-key="sony-wh-1000xm5-desc">Industry-leading noise cancellation with exceptional sound quality.</p>
+                        <p class="price">$399.00</p>
+                        <button class="cart-btn" data-product="Sony WH-1000XM5" data-price="399">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Bose QC 45 -->
+                    <div class="product-card">
+                        <img src="image/products/Bose QuietComfort 45.png" alt="Bose QuietComfort 45" class="product-image">
+                        <h3 data-key="bose-qc-45">Bose QuietComfort 45</h3>
+                        <p data-key="bose-qc-45-desc">Premium noise cancelling headphones with comfortable design.</p>
+                        <p class="price">$329.00</p>
+                        <button class="cart-btn" data-product="Bose QuietComfort 45" data-price="329">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- AirPods Max -->
+                    <div class="product-card">
+                        <img src="image/products/Apple AirPods Max.png" alt="Apple AirPods Max" class="product-image">
+                        <h3 data-key="airpods-max">Apple AirPods Max</h3>
+                        <p data-key="airpods-max-desc">Over-ear headphones with computational audio and seamless ecosystem.</p>
+                        <p class="price">$549.00</p>
+                        <button class="cart-btn" data-product="Apple AirPods Max" data-price="549">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Sennheiser Momentum 4 -->
+                    <div class="product-card">
+                        <img src="image/products/Sennheiser Momentum 4.png" alt="Sennheiser Momentum 4" class="product-image">
+                        <h3 data-key="sennheiser-momentum-4">Sennheiser Momentum 4</h3>
+                        <p data-key="sennheiser-momentum-4-desc">Audiophile-grade wireless headphones with exceptional sound.</p>
+                        <p class="price">$349.00</p>
+                        <button class="cart-btn" data-product="Sennheiser Momentum 4" data-price="349">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Beyerdynamic DT 990 -->
+                    <div class="product-card">
+                        <img src="image/products/Beyerdynamic DT 990 Pro.png" alt="Beyerdynamic DT 990 Pro" class="product-image">
+                        <h3 data-key="beyerdynamic-dt-990">Beyerdynamic DT 990 Pro</h3>
+                        <p data-key="beyerdynamic-dt-990-desc">Studio headphones with open-back design for professional use.</p>
+                        <p class="price">$179.00</p>
+                        <button class="cart-btn" data-product="Beyerdynamic DT 990 Pro" data-price="179">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Sonos Move 2 -->
+                    <div class="product-card">
+                        <img src="image/products/Sonos Move 2.png" alt="Sonos Move 2" class="product-image">
+                        <h3 data-key="sonos-move-2">Sonos Move 2</h3>
+                        <p data-key="sonos-move-2-desc">Portable smart speaker with powerful sound and Wi-Fi/Bluetooth.</p>
+                        <p class="price">$449.00</p>
+                        <button class="cart-btn" data-product="Sonos Move 2" data-price="449">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- JBL Charge 5 -->
+                    <div class="product-card">
+                        <img src="image/products/JBL Charge 5.png" alt="JBL Charge 5" class="product-image">
+                        <h3 data-key="jbl-charge-5">JBL Charge 5</h3>
+                        <p data-key="jbl-charge-5-desc">Waterproof portable speaker with powerful bass and power bank.</p>
+                        <p class="price">$179.00</p>
+                        <button class="cart-btn" data-product="JBL Charge 5" data-price="179">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Bose SoundLink Flex -->
+                    <div class="product-card">
+                        <img src="image/products/Bose SoundLink Flex.png" alt="Bose SoundLink Flex" class="product-image">
+                        <h3 data-key="bose-soundlink-flex">Bose SoundLink Flex</h3>
+                        <p data-key="bose-soundlink-flex-desc">Portable Bluetooth speaker with rugged design and clear sound.</p>
+                        <p class="price">$149.00</p>
+                        <button class="cart-btn" data-product="Bose SoundLink Flex" data-price="149">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Marshall Stanmore III -->
+                    <div class="product-card">
+                        <img src="image/products/Marshall Stanmore III.png" alt="Marshall Stanmore III" class="product-image">
+                        <h3 data-key="marshall-stanmore-iii">Marshall Stanmore III</h3>
+                        <p data-key="marshall-stanmore-iii-desc">Home speaker with iconic design and room-filling sound.</p>
+                        <p class="price">$349.00</p>
+                        <button class="cart-btn" data-product="Marshall Stanmore III" data-price="349">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Harman Kardon Onyx 8 -->
+                    <div class="product-card">
+                        <img src="image/products/Harman Kardon Onyx Studio 8.png" alt="Harman Kardon Onyx Studio 8" class="product-image">
+                        <h3 data-key="harman-kardon-onyx-8">Harman Kardon Onyx Studio 8</h3>
+                        <p data-key="harman-kardon-onyx-8-desc">Premium wireless speaker with elegant design and rich sound.</p>
+                        <p class="price">$299.00</p>
+                        <button class="cart-btn" data-product="Harman Kardon Onyx Studio 8" data-price="299">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== CHARGER CATEGORY - 15 PRODUCTS ========== -->
+                <div class="products-container category-products" id="charger-products" style="display: none;">
+                    <!-- Anker 735 Charger -->
+                    <div class="product-card">
+                        <img src="image/products/Anker 735 Charger.png" alt="Anker 735 Charger" class="product-image">
+                        <h3 data-key="anker-735-charger">Anker 735 Charger</h3>
+                        <p data-key="anker-735-charger-desc">GaNPrime 65W charger with 3 ports for fast charging multiple devices.</p>
+                        <p class="price">$49.99</p>
+                        <button class="cart-btn" data-product="Anker 735 Charger" data-price="49.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Belkin 3-in-1 -->
+                    <div class="product-card">
+                        <img src="image/products/Belkin 3-in-1.png" alt="Belkin 3-in-1" class="product-image">
+                        <h3 data-key="belkin-3-in-1">Belkin 3-in-1</h3>
+                        <p data-key="belkin-3-in-1-desc">MagSafe charger for iPhone, Apple Watch, and AirPods simultaneously.</p>
+                        <p class="price">$129.99</p>
+                        <button class="cart-btn" data-product="Belkin 3-in-1" data-price="129.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Wireless Charger -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Wireless Charger.png" alt="Samsung Wireless Charger" class="product-image">
+                        <h3 data-key="samsung-wireless-charger">Samsung Wireless Charger</h3>
+                        <p data-key="samsung-wireless-charger-desc">Fast wireless charging pad for Samsung and Qi-compatible devices.</p>
+                        <p class="price">$39.99</p>
+                        <button class="cart-btn" data-product="Samsung Wireless Charger" data-price="39.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Baseus 65W Charger -->
+                    <div class="product-card">
+                        <img src="image/products/Baseus 65W Charger.png" alt="Baseus 65W Charger" class="product-image">
+                        <h3 data-key="baseus-65w-charger">Baseus 65W Charger</h3>
+                        <p data-key="baseus-65w-charger-desc">Compact GaN charger with 2 USB-C and 1 USB-A ports.</p>
+                        <p class="price">$35.99</p>
+                        <button class="cart-btn" data-product="Baseus 65W Charger" data-price="35.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Anker Powerline III -->
+                    <div class="product-card">
+                        <img src="image/products/Anker Powerline III.png" alt="Anker Powerline III" class="product-image">
+                        <h3 data-key="anker-powerline-iii">Anker Powerline III</h3>
+                        <p data-key="anker-powerline-iii-desc">Durable USB-C to USB-C cable with 100W fast charging support.</p>
+                        <p class="price">$19.99</p>
+                        <button class="cart-btn" data-product="Anker Powerline III" data-price="19.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- MacBook Pro Charger -->
+                    <div class="product-card">
+                        <img src="image/products/MacBook Pro 140W Charger.png" alt="MacBook Pro 140W Charger" class="product-image">
+                        <h3 data-key="macbook-pro-charger">MacBook Pro 140W Charger</h3>
+                        <p data-key="macbook-pro-charger-desc">Official Apple 140W USB-C power adapter for MacBook Pro fast charging.</p>
+                        <p class="price">$99.00</p>
+                        <button class="cart-btn" data-product="MacBook Pro 140W Charger" data-price="99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Dell XPS Charger -->
+                    <div class="product-card">
+                        <img src="image/products/Dell XPS 130W Charger.png" alt="Dell XPS 130W Charger" class="product-image">
+                        <h3 data-key="dell-xps-charger">Dell XPS 130W Charger</h3>
+                        <p data-key="dell-xps-charger-desc">Official Dell 130W USB-C charger with fast charging for XPS laptops.</p>
+                        <p class="price">$79.99</p>
+                        <button class="cart-btn" data-product="Dell XPS 130W Charger" data-price="79.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Lenovo ThinkPad Charger -->
+                    <div class="product-card">
+                        <img src="image/products/Lenovo ThinkPad 65W Charger.png" alt="Lenovo ThinkPad 65W Charger" class="product-image">
+                        <h3 data-key="lenovo-thinkpad-charger">Lenovo ThinkPad 65W Charger</h3>
+                        <p data-key="lenovo-thinkpad-charger-desc">USB-C laptop charger with Power Delivery for ThinkPad and other laptops.</p>
+                        <p class="price">$49.99</p>
+                        <button class="cart-btn" data-product="Lenovo ThinkPad 65W Charger" data-price="49.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- HP Laptop Charger -->
+                    <div class="product-card">
+                        <img src="image/products/HP 90W Smart Charger.png" alt="HP 90W Smart Charger" class="product-image">
+                        <h3 data-key="hp-laptop-charger">HP 90W Smart Charger</h3>
+                        <p data-key="hp-laptop-charger-desc">Official HP 90W AC adapter with Smart Pin for HP laptops.</p>
+                        <p class="price">$59.99</p>
+                        <button class="cart-btn" data-product="HP 90W Smart Charger" data-price="59.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- UGREEN 100W Charger -->
+                    <div class="product-card">
+                        <img src="image/products/UGREEN 100W Charger.png" alt="UGREEN 100W Charger" class="product-image">
+                        <h3 data-key="ugreen-100w-charger">UGREEN 100W Charger</h3>
+                        <p data-key="ugreen-100w-charger-desc">High-power GaN charger with 4 ports for laptops and devices.</p>
+                        <p class="price">$79.99</p>
+                        <button class="cart-btn" data-product="UGREEN 100W Charger" data-price="79.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Mophie Powerstation -->
+                    <div class="product-card">
+                        <img src="image/products/Mophie Powerstation.png" alt="Mophie Powerstation" class="product-image">
+                        <h3 data-key="mophie-powerstation">Mophie Powerstation</h3>
+                        <p data-key="mophie-powerstation-desc">Portable power bank with 10,000mAh capacity and fast charging.</p>
+                        <p class="price">$59.95</p>
+                        <button class="cart-btn" data-product="Mophie Powerstation" data-price="59.95">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Anker PowerCore -->
+                    <div class="product-card">
+                        <img src="image/products/Anker PowerCore 26800.png" alt="Anker PowerCore 26800" class="product-image">
+                        <h3 data-key="anker-powercore">Anker PowerCore 26800</h3>
+                        <p data-key="anker-powercore-desc">High-capacity power bank with 26,800mAh for multiple device charges.</p>
+                        <p class="price">$89.99</p>
+                        <button class="cart-btn" data-product="Anker PowerCore 26800" data-price="89.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Nomad Wireless Hub -->
+                    <div class="product-card">
+                        <img src="image/products/Nomad Wireless Hub.png" alt="Nomad Wireless Hub" class="product-image">
+                        <h3 data-key="nomad-wireless-hub">Nomad Wireless Hub</h3>
+                        <p data-key="nomad-wireless-hub-desc">Premium wireless charger with metal design and leather surface.</p>
+                        <p class="price">$99.95</p>
+                        <button class="cart-btn" data-product="Nomad Wireless Hub" data-price="99.95">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Pitaka MagEZ -->
+                    <div class="product-card">
+                        <img src="image/products/Pitaka MagEZ Charger.png" alt="Pitaka MagEZ Charger" class="product-image">
+                        <h3 data-key="pitaka-magez">Pitaka MagEZ Charger</h3>
+                        <p data-key="pitaka-magez-desc">Multi-device wireless charger with aramid fiber design.</p>
+                        <p class="price">$129.99</p>
+                        <button class="cart-btn" data-product="Pitaka MagEZ Charger" data-price="129.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- RAVPower 20000 -->
+                    <div class="product-card">
+                        <img src="image/products/RAVPower 20000mAh.png" alt="RAVPower 20000mAh" class="product-image">
+                        <h3 data-key="ravpower-20000">RAVPower 20000mAh</h3>
+                        <p data-key="ravpower-20000-desc">Portable charger with 30W PD for laptops and devices.</p>
+                        <p class="price">$69.99</p>
+                        <button class="cart-btn" data-product="RAVPower 20000mAh" data-price="69.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ========== WATCH CATEGORY - 15 PRODUCTS ========== -->
+                <div class="products-container category-products" id="watch-products" style="display: none;">
+                    <!-- Apple Watch Ultra 2 -->
+                    <div class="product-card">
+                        <img src="image/products/Apple Watch Ultra 2.png" alt="Apple Watch Ultra 2" class="product-image">
+                        <h3 data-key="apple-watch-ultra-2">Apple Watch Ultra 2</h3>
+                        <p data-key="apple-watch-ultra-2-desc">Titanium case, 49mm display, dual-frequency GPS, and up to 36 hours battery life.</p>
+                        <p class="price">$799.00</p>
+                        <button class="cart-btn" data-product="Apple Watch Ultra 2" data-price="799">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Apple Watch Series 9 -->
+                    <div class="product-card">
+                        <img src="image/products/Apple Watch Series 9.png" alt="Apple Watch Series 9" class="product-image">
+                        <h3 data-key="apple-watch-series-9">Apple Watch Series 9</h3>
+                        <p data-key="apple-watch-series-9-desc">S9 chip, double tap gesture, brighter display, and advanced health features.</p>
+                        <p class="price">$399.00</p>
+                        <button class="cart-btn" data-product="Apple Watch Series 9" data-price="399">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Apple Watch SE -->
+                    <div class="product-card">
+                        <img src="image/products/Apple Watch SE.png" alt="Apple Watch SE" class="product-image">
+                        <h3 data-key="apple-watch-se">Apple Watch SE</h3>
+                        <p data-key="apple-watch-se-desc">Essential features, activity tracking, and family setup at an affordable price.</p>
+                        <p class="price">$249.00</p>
+                        <button class="cart-btn" data-product="Apple Watch SE" data-price="249">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Watch 6 Classic -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy Watch 6 Classic.png" alt="Samsung Galaxy Watch 6 Classic" class="product-image">
+                        <h3 data-key="samsung-watch-6-classic">Samsung Galaxy Watch 6 Classic</h3>
+                        <p data-key="samsung-watch-6-classic-desc">Rotating bezel, sapphire crystal, body composition analysis, and ECG monitoring.</p>
+                        <p class="price">$399.99</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy Watch 6 Classic" data-price="399.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Watch 6 -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy Watch 6.png" alt="Samsung Galaxy Watch 6" class="product-image">
+                        <h3 data-key="samsung-watch-6">Samsung Galaxy Watch 6</h3>
+                        <p data-key="samsung-watch-6-desc">Slim design, bright display, advanced sleep tracking, and Wear OS.</p>
+                        <p class="price">$299.99</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy Watch 6" data-price="299.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Samsung Watch 5 Pro -->
+                    <div class="product-card">
+                        <img src="image/products/Samsung Galaxy Watch 5 Pro.png" alt="Samsung Galaxy Watch 5 Pro" class="product-image">
+                        <h3 data-key="samsung-watch-5-pro">Samsung Galaxy Watch 5 Pro</h3>
+                        <p data-key="samsung-watch-5-pro-desc">Titanium body, sapphire crystal, long battery life, and advanced GPS.</p>
+                        <p class="price">$449.99</p>
+                        <button class="cart-btn" data-product="Samsung Galaxy Watch 5 Pro" data-price="449.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Garmin Fenix 7 -->
+                    <div class="product-card">
+                        <img src="image/products/Garmin Fenix 7.png" alt="Garmin Fenix 7" class="product-image">
+                        <h3 data-key="garmin-fenix-7">Garmin Fenix 7</h3>
+                        <p data-key="garmin-fenix-7-desc">Premium multisport GPS watch with solar charging and advanced training features.</p>
+                        <p class="price">$699.99</p>
+                        <button class="cart-btn" data-product="Garmin Fenix 7" data-price="699.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Garmin Epix Pro -->
+                    <div class="product-card">
+                        <img src="image/products/Garmin Epix Pro.png" alt="Garmin Epix Pro" class="product-image">
+                        <h3 data-key="garmin-epix-pro">Garmin Epix Pro</h3>
+                        <p data-key="garmin-epix-pro-desc">AMOLED display, advanced mapping, and premium fitness tracking.</p>
+                        <p class="price">$899.99</p>
+                        <button class="cart-btn" data-product="Garmin Epix Pro" data-price="899.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Garmin Venu 3 -->
+                    <div class="product-card">
+                        <img src="image/products/Garmin Venu 3.png" alt="Garmin Venu 3" class="product-image">
+                        <h3 data-key="garmin-venu-3">Garmin Venu 3</h3>
+                        <p data-key="garmin-venu-3-desc">AMOLED display, advanced health monitoring, and fitness features.</p>
+                        <p class="price">$449.99</p>
+                        <button class="cart-btn" data-product="Garmin Venu 3" data-price="449.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Google Pixel Watch 2 -->
+                    <div class="product-card">
+                        <img src="image/products/Google Pixel Watch 2.png" alt="Google Pixel Watch 2" class="product-image">
+                        <h3 data-key="google-pixel-watch-2">Google Pixel Watch 2</h3>
+                        <p data-key="google-pixel-watch-2-desc">Fitbit integration, stress management, and Wear OS with Google Assistant.</p>
+                        <p class="price">$349.99</p>
+                        <button class="cart-btn" data-product="Google Pixel Watch 2" data-price="349.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Fossil Gen 6 -->
+                    <div class="product-card">
+                        <img src="image/products/Fossil Gen 6.png" alt="Fossil Gen 6" class="product-image">
+                        <h3 data-key="fossil-gen-6">Fossil Gen 6</h3>
+                        <p data-key="fossil-gen-6-desc">Wear OS, heart rate tracking, and stylish design with rotating crown.</p>
+                        <p class="price">$299.00</p>
+                        <button class="cart-btn" data-product="Fossil Gen 6" data-price="299">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Withings ScanWatch -->
+                    <div class="product-card">
+                        <img src="image/products/Withings ScanWatch.png" alt="Withings ScanWatch" class="product-image">
+                        <h3 data-key="withings-scanwatch">Withings ScanWatch</h3>
+                        <p data-key="withings-scanwatch-desc">Hybrid smartwatch with ECG, blood oxygen monitoring, and 30-day battery.</p>
+                        <p class="price">$349.95</p>
+                        <button class="cart-btn" data-product="Withings ScanWatch" data-price="349.95">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Huawei Watch GT 4 -->
+                    <div class="product-card">
+                        <img src="image/products/Huawei Watch GT 4.png" alt="Huawei Watch GT 4" class="product-image">
+                        <h3 data-key="huawei-watch-gt-4">Huawei Watch GT 4</h3>
+                        <p data-key="huawei-watch-gt-4-desc">Long battery life, precise health tracking, and elegant design.</p>
+                        <p class="price">$249.99</p>
+                        <button class="cart-btn" data-product="Huawei Watch GT 4" data-price="249.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Amazfit GTR 4 -->
+                    <div class="product-card">
+                        <img src="image/products/Amazfit GTR 4.png" alt="Amazfit GTR 4" class="product-image">
+                        <h3 data-key="amazfit-gtr-4">Amazfit GTR 4</h3>
+                        <p data-key="amazfit-gtr-4-desc">AMOLED display, dual-band GPS, and amazing battery life up to 24 days.</p>
+                        <p class="price">$199.99</p>
+                        <button class="cart-btn" data-product="Amazfit GTR 4" data-price="199.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                    
+                    <!-- TicWatch Pro 5 -->
+                    <div class="product-card">
+                        <img src="image/products/TicWatch Pro 5.png" alt="TicWatch Pro 5" class="product-image">
+                        <h3 data-key="ticwatch-pro-5">TicWatch Pro 5</h3>
+                        <p data-key="ticwatch-pro-5-desc">Ultra-low power display, Snapdragon W5+ Gen 1, and advanced health sensors.</p>
+                        <p class="price">$349.99</p>
+                        <button class="cart-btn" data-product="TicWatch Pro 5" data-price="349.99">
+                            <i class="fas fa-cart-plus"></i> <span data-key="add-to-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <section id="cart" style="display: none;">
+        <h2 data-key="cart-title">Your Shopping Cart</h2>
+        <div class="cart-container">
+            <div class="cart-table-container">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th data-key="product">Product</th>
+                            <th data-key="price">Price</th>
+                            <th data-key="quantity">Quantity</th>
+                            <th data-key="total">Total</th>
+                            <th data-key="action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Cart items will be added here by JavaScript -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right"><strong data-key="total-label">Total:</strong></td>
+                            <td id="cart-total">$0.00</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="cart-buttons">
+                <button class="continue-shopping" data-key="continue">Continue Shopping</button>
+                <button class="checkout-btn" data-key="checkout">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" style="display: none;">
+        <h2 data-key="payment-title">Payment</h2>
+        <div class="payment-container">
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3 data-key="order-summary">Order Summary</h3>
+                <div id="order-items">
+                    <!-- Order items will be added by JavaScript -->
+                </div>
+                <div class="order-totals">
+                    <div class="total-row">
+                        <span data-key="subtotal">Subtotal:</span>
+                        <span id="payment-subtotal">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span data-key="shipping">Shipping:</span>
+                        <span id="payment-shipping">$5.99</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span data-key="total-label">Total:</span>
+                        <span id="payment-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <h3 data-key="payment-method">Select Payment Method</h3>
+                
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="card" checked>
+                        <i class="fas fa-credit-card"></i>
+                        <span data-key="card-payment">Card Payment</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="google-pay">
+                        <i class="fab fa-google-pay"></i>
+                        <span data-key="google-pay">Google Pay</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="apple-pay">
+                        <i class="fab fa-apple-pay"></i>
+                        <span data-key="apple-pay">Apple Pay</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="paypal">
+                        <i class="fab fa-paypal"></i>
+                        <span data-key="paypal">PayPal</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="mbway">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span data-key="mbway">MB WAY</span>
+                    </label>
+                </div>
+
+                <!-- Card Payment Form -->
+                <div id="card-form" class="payment-detail-form">
+                    <h4 data-key="card-details">Card Details</h4>
+                    <div class="form-group">
+                        <label for="card-number" data-key="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="expiry" data-key="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group half">
+                            <label for="cvv" data-key="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-name" data-key="card-name">Name on Card</label>
+                        <input type="text" id="card-name" placeholder="John Doe">
+                    </div>
+                </div>
+
+                <!-- MB WAY Form -->
+                <div id="mbway-form" class="payment-detail-form" style="display: none;">
+                    <h4 data-key="mbway-details">MB WAY Payment</h4>
+                    <div class="mbway-logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>MB WAY</span>
+                    </div>
+                    <p data-key="mbway-instruction">Enter your mobile phone number to receive payment notification</p>
+                    <div class="form-group">
+                        <label for="mbway-phone" data-key="phone-number">Phone Number</label>
+                        <input type="tel" id="mbway-phone" placeholder="+351 912 345 678">
+                    </div>
+                </div>
+
+                <!-- Google Pay Info -->
+                <div id="googlepay-info" class="payment-detail-form" style="display: none;">
+                    <div class="wallet-info">
+                        <i class="fab fa-google-pay" style="font-size: 3rem;"></i>
+                        <p data-key="googlepay-info">You will be redirected to Google Pay to complete your payment securely.</p>
+                    </div>
+                </div>
+
+                <!-- Apple Pay Info -->
+                <div id="applepay-info" class="payment-detail-form" style="display: none;">
+                    <div class="wallet-info">
+                        <i class="fab fa-apple-pay" style="font-size: 3rem;"></i>
+                        <p data-key="applepay-info">You will be redirected to Apple Pay to complete your payment securely.</p>
+                    </div>
+                </div>
+
+                <!-- PayPal Info -->
+                <div id="paypal-info" class="payment-detail-form" style="display: none;">
+                    <div class="wallet-info">
+                        <i class="fab fa-paypal" style="font-size: 3rem;"></i>
+                        <p data-key="paypal-info">You will be redirected to PayPal to complete your payment securely.</p>
+                    </div>
+                </div>
+
+                <!-- Shipping Address Section -->
+                <div class="shipping-address-section">
+                    <h3 data-key="shipping-address">Shipping Address</h3>
+                    <div class="address-form">
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="first-name" data-key="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="John" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="last-name" data-key="last-name">Last Name</label>
+                                <input type="text" id="last-name" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address-line1" data-key="address-line1">Address Line 1</label>
+                            <input type="text" id="address-line1" placeholder="123 Main Street" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address-line2" data-key="address-line2">Address Line 2 (Optional)</label>
+                            <input type="text" id="address-line2" placeholder="Apt 4B">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="city" data-key="city">City</label>
+                                <input type="text" id="city" placeholder="New York" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="state" data-key="state">State / Province</label>
+                                <input type="text" id="state" placeholder="NY" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="zip-code" data-key="zip-code">ZIP / Postal Code</label>
+                                <input type="text" id="zip-code" placeholder="10001" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="country" data-key="country">Country</label>
+                                <select id="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="FR">France</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="AE">UAE</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-key="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 123 456 7890" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmation-email" data-key="confirmation-email">Email for Order Confirmation</label>
+                            <input type="email" id="confirmation-email" placeholder="john.doe@example.com" required>
+                            <small class="field-note" data-key="email-note">We'll send your order confirmation and tracking info to this email</small>
+                        </div>
+                        
+                        <!-- Save address checkbox -->
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="save-address" checked>
+                            <label for="save-address" data-key="save-address">Save this address for future orders</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Buttons -->
+                <div class="payment-buttons">
+                    <button class="back-to-cart" data-key="back-to-cart">← Back to Cart</button>
+                    <button class="pay-now-btn" data-key="pay-now">Pay Now</button>
+                </div>
+                
+            </div>  <!-- Close payment-methods -->
+        </div>  <!-- Close payment-container -->
+    </section>  <!-- Close payment section -->
+
+    <!-- About Section -->
+    <section id="about" style="display: none;">
+        <h2 data-key="about-title">About SNOWFALL</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3 data-key="about-story-title">Our Story</h3>
+                <p data-key="about-story-text">SNOWFALL was founded in 2024 with a simple mission: to bring the latest technology to customers at fair prices. What started as a small passion for gadgets has grown into a trusted online destination for electronics enthusiasts worldwide.</p>
+            </div>
+            <div class="about-text">
+                <h3 data-key="about-products-title">What We Sell</h3>
+                <p data-key="about-products-text">We specialize in smartphones, laptops, tablets, cameras, gaming consoles, headphones, smartwatches, and accessories. Every product in our catalog is carefully selected for quality and performance.</p>
+            </div>
+            <div class="about-text">
+                <h3 data-key="about-why-title">Why Choose Us</h3>
+                <ul class="about-list">
+                    <li><i class="fas fa-check"></i> <span data-key="about-why1">Latest electronics at competitive prices</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="about-why2">100% genuine products with warranty</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="about-why3">Fast & secure shipping worldwide</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="about-why4">24/7 customer support</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="about-why5">Easy returns & refunds</span></li>
+                </ul>
+            </div>
+            <div class="about-text">
+                <h3 data-key="about-promise-title">Our Promise</h3>
+                <p data-key="about-promise-text">Your satisfaction is our priority. We're committed to providing a safe, secure, and enjoyable shopping experience from browsing to delivery and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="display: none;">
+        <h2 data-key="services-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 data-key="delivery-title">Fast & Reliable Delivery</h3>
+                <p data-key="delivery-desc">Get your products delivered quickly and safely to your doorstep.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> <span data-key="delivery-feature1">Same-day / next-day delivery</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="delivery-feature2">Worldwide shipping</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="delivery-feature3">Real-time order tracking</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+                <h3 data-key="returns-title">Easy Returns & Refunds</h3>
+                <p data-key="returns-desc">Hassle-free returns and quick refunds for your peace of mind.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> <span data-key="returns-feature1">7-day or 30-day return policy</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="returns-feature2">Free returns</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="returns-feature3">Quick refund processing</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 data-key="payments-title">Secure Payments</h3>
+                <p data-key="payments-desc">Your transactions are protected with industry-leading security.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> <span data-key="payments-feature1">SSL secure checkout</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="payments-feature2">Multiple payment methods</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="payments-feature3">Fraud protection</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 data-key="support-title">24/7 Customer Support</h3>
+                <p data-key="support-desc">We're always here to help you with any questions or concerns.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> <span data-key="support-feature1">Live chat support</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="support-feature2">Email support</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="support-feature3">Phone support</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 data-key="warranty-title">Product Warranty</h3>
+                <p data-key="warranty-desc">All our products come with warranty coverage for your protection.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> <span data-key="warranty-feature1">1-year warranty</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="warranty-feature2">Replacement guarantee</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="warranty-feature3">Authentic products</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 data-key="tracking-title">Order Tracking</h3>
+                <p data-key="tracking-desc">Follow your package every step of the way until it arrives.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> <span data-key="tracking-feature1">Track order from account dashboard</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="tracking-feature2">SMS / email shipping updates</span></li>
+                    <li><i class="fas fa-check"></i> <span data-key="tracking-feature3">Real-time location tracking</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- Trust Badges Section -->
+<div class="trust-section" style="display: none;"> 
+    <div class="trust-item">
+        <i class="fas fa-shield-alt"></i>
+        <span data-key="trust-genuine">100% Genuine Products</span>
+    </div>
+    <div class="trust-item" id="return-shipping-btn">
+        <i class="fas fa-truck"></i>
+        <span data-key="trust-shipping">Return Shipping $50</span>
+    </div>
+    <div class="trust-item" id="returns-tracking-btn">
+        <i class="fas fa-undo"></i>
+        <span data-key="trust-returns">30-Day Returns</span>
+    </div>
+    <div class="trust-item">
+        <i class="fas fa-headset"></i>
+        <span data-key="trust-support">24/7 Support</span>
+    </div>
+</div>
+    <!-- Contact Section -->
+    <section id="contact" style="display: none;">
+        <h2 data-key="contact-title">Contact Us</h2>
+        <form>
+            <label for="name" data-key="name-label">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email" data-key="email-label">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message" data-key="message-label">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button type="submit" data-key="send">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SNOWFALL. <span data-key="rights">All rights reserved.</span></p>
+    </footer>
+
+    <!-- Payment Success Modal -->
+    <div id="payment-success-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2 data-key="payment-success">Payment Successful!</h2>
+            </div>
+            <div class="modal-body">
+                <div class="order-number">
+                    <p data-key="order-number">Order #:</p>
+                    <span id="order-number-display"></span>
+                </div>
+                <p class="receipt-message" data-key="receipt-sent">A receipt has been sent to your email.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="continue-shopping-btn" data-key="continue-shopping">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Bot Modal -->
+    <div id="chatbot-modal" class="chatbot-modal" style="display: none;">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <div class="chatbot-title">
+                    <i class="fas fa-robot"></i>
+                    <h3>SNOWFALL Assistant</h3>
+                </div>
+                <button class="chatbot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        👋 Hello! I'm your SNOWFALL assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Type your message here..." data-key="chat-placeholder">
+                <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div class="chatbot-quick-questions">
+                <button class="quick-question" data-question="shipping">📦 Shipping</button>
+                <button class="quick-question" data-question="returns">🔄 Returns</button>
+                <button class="quick-question" data-question="payment">💳 Payment</button>
+                <button class="quick-question" data-question="warranty">🛡️ Warranty</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Bot Toggle Button -->
+    <button class="chatbot-toggle-btn" id="chatbot-toggle" style="display: none;">
+        <i class="fas fa-robot"></i>
+        <span class="chatbot-notification">1</span>
+    </button>
+
+    <!-- Order Tracking Modal -->
+    <div id="order-tracking-modal" class="order-tracking-modal" style="display: none;">
+        <div class="tracking-container">
+            <div class="tracking-header">
+                <div class="tracking-title">
+                    <i class="fas fa-search"></i>
+                    <h3>Track Your Order</h3>
+                </div>
+                <button class="tracking-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="tracking-body">
+                <p>Enter your order confirmation number to check return eligibility and status.</p>
+                <div class="tracking-input-group">
+                    <input type="text" id="order-confirmation-input" placeholder="SNOW-XXXXXXXX" value="SNOW-">
+                    <button id="track-order-btn">Track Order</button>
+                </div>
+                <div class="recent-orders">
+                    <p>Recent orders from this browser:</p>
+                    <div id="recent-orders-list">
+                        <!-- Recent orders will appear here -->
+                    </div>
+                </div>
+                <div id="order-result" class="order-result" style="display: none;">
+                    <!-- Order result will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Returns Modal -->
+<div id="returns-modal" class="returns-modal" style="display: none;">
+    <div class="returns-container">
+        <div class="returns-header">
+            <div class="returns-title">
+                <i class="fas fa-undo-alt"></i>
+                <h3>Return Request</h3>
+            </div>
+            <button class="returns-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="returns-body">
+            <!-- Progress Steps -->
+            <div class="return-steps">
+                <div class="step active" id="step1">
+                    <div class="step-number">1</div>
+                    <span>Find Order</span>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-number">2</div>
+                    <span>Select Items</span>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-number">3</div>
+                    <span>Reason</span>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-number">4</div>
+                    <span>Confirm</span>
+                </div>
+            </div>
+
+            <!-- Step 1: Find Order -->
+            <div id="return-step-1" class="return-form">
+                <h4>Find Your Order</h4>
+                <p style="color: #666; margin-bottom: 15px;">Enter your order number and email to start the return process.</p>
+                
+                <div class="order-search">
+                    <input type="text" id="return-order-number" placeholder="Order Number (e.g., SNOW-12345678)">
+                    <button id="search-order-btn">Search</button>
+                </div>
+                
+                <div id="order-preview" style="display: none;" class="order-details-card">
+                    <h4 style="margin-bottom: 15px;">Order Found!</h4>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Order Number:</span>
+                        <span class="order-info-value" id="preview-order-number">SNOW-12345678</span>
+                    </div>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Order Date:</span>
+                        <span class="order-info-value" id="preview-order-date">March 1, 2026</span>
+                    </div>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Total:</span>
+                        <span class="order-info-value" id="preview-order-total">$1,299.00</span>
+                    </div>
+                    <div id="return-eligibility" class="return-eligibility eligible">
+                        ✅ Eligible for return (24 days left)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Select Items -->
+            <div id="return-step-2" class="return-form hidden">
+                <h4>Select Items to Return</h4>
+                <p style="color: #666; margin-bottom: 15px;">Choose which items you want to return.</p>
+                
+                <div class="return-items-list" id="return-items-list">
+                    <!-- Items will be loaded here -->
+                </div>
+                
+                <div class="return-summary">
+                    <div class="summary-row">
+                        <span>Items to Return:</span>
+                        <span id="return-item-count">0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Refund Amount:</span>
+                        <span id="return-amount">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Return Shipping:</span>
+                        <span>$5.99</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total Refund:</span>
+                        <span id="return-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Return Reason -->
+            <div id="return-step-3" class="return-form hidden">
+                <h4>Return Reason</h4>
+                
+                <div class="return-reason">
+                    <label for="return-reason-select">Reason for Return</label>
+                    <select id="return-reason-select">
+                        <option value="">Select a reason</option>
+                        <option value="defective">Product defective or not working</option>
+                        <option value="wrong-item">Wrong item received</option>
+                        <option value="not-as-described">Not as described</option>
+                        <option value="changed-mind">Changed my mind</option>
+                        <option value="better-price">Found better price elsewhere</option>
+                        <option value="shipping-damage">Damaged during shipping</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="return-reason">
+                    <label for="return-comments">Additional Comments (Optional)</label>
+                    <textarea id="return-comments" placeholder="Please provide more details about your return..."></textarea>
+                </div>
+                
+                <div class="return-address">
+                    <h5>Return Shipping Address</h5>
+                    <p><span class="address-label">SNOWFALL Returns Center</span></p>
+                    <p>123 Warehouse Street</p>
+                    <p>Suite 400</p>
+                    <p>New York, NY 10001</p>
+                    <p>United States</p>
+                </div>
+            </div>
+
+            <!-- Step 4: Confirm -->
+            <div id="return-step-4" class="return-form hidden">
+                <h4>Confirm Return Request</h4>
+                
+                <div class="order-details-card">
+                    <h5 style="margin-bottom: 10px;">Return Summary</h5>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Order Number:</span>
+                        <span class="order-info-value" id="confirm-order-number">SNOW-12345678</span>
+                    </div>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Items:</span>
+                        <span class="order-info-value" id="confirm-item-count">2 items</span>
+                    </div>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Refund Amount:</span>
+                        <span class="order-info-value" id="confirm-refund-amount">$0.00</span>
+                    </div>
+                    <div class="order-info-row">
+                        <span class="order-info-label">Reason:</span>
+                        <span class="order-info-value" id="confirm-reason">-</span>
+                    </div>
+                </div>
+                
+                <div class="return-address" style="background: #fff3cd; border: 1px solid #ffeeba;">
+                    <h5 style="color: #856404;">📦 Shipping Instructions</h5>
+                    <p style="color: #856404;">Pack the items securely and ship to:</p>
+                    <p style="color: #856404; font-weight: bold;">SNOWFALL Returns Center</p>
+                    <p style="color: #856404;">123 Warehouse Street, Suite 400</p>
+                    <p style="color: #856404;">New York, NY 10001</p>
+                </div>
+                
+                <div class="form-checkbox" style="margin: 20px 0;">
+                    <input type="checkbox" id="confirm-return-terms">
+                    <label for="confirm-return-terms">I confirm that the items are in original condition and I have read the return policy.</label>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="return-buttons">
+                <button class="return-btn-prev" id="return-prev-btn" disabled>← Previous</button>
+                <button class="return-btn-next" id="return-next-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Return Success Modal -->
+<div id="return-success-modal" class="return-success-modal" style="display: none;">
+    <div class="return-success-content">
+        <i class="fas fa-check-circle"></i>
+        <h3>Return Request Submitted!</h3>
+        <p>Your return request has been received and is being processed.</p>
+        <div class="return-number" id="return-request-number">RET-12345678</div>
+        <div class="return-info">
+            <i class="fas fa-info-circle"></i>
+            <p>Please ship your items within 7 days. A prepaid shipping label has been generated.</p>
+        </div>
+        <button class="return-btn" id="view-label-btn">View Shipping Label</button>
+    </div>
+</div>
+
+<!-- Shipping Label Modal -->
+<div id="shipping-label-modal" class="shipping-label-modal" style="display: none;">
+    <div class="label-content">
+        <div class="label-header">
+            <i class="fas fa-tag"></i>
+            <h3>Return Shipping Label</h3>
+        </div>
+        
+        <div class="label-details">
+            <div class="label-row">
+                <span>Return #:</span>
+                <span id="label-return-number">RET-12345678</span>
+            </div>
+            <div class="label-row">
+                <span>Order #:</span>
+                <span id="label-order-number">SNOW-12345678</span>
+            </div>
+            <div class="label-row">
+                <span>From:</span>
+                <span id="label-from">John Doe, 123 Main St</span>
+            </div>
+            <div class="label-row">
+                <span>To:</span>
+                <span>SNOWFALL Returns Center</span>
+            </div>
+            <div class="label-row">
+                <span>Service:</span>
+                <span>Prepaid Return (USPS)</span>
+            </div>
+            <div class="label-row">
+                <span>Tracking #:</span>
+                <span id="label-tracking">9405 5012 3456 7890 1234 56</span>
+            </div>
+        </div>
+        
+        <div class="label-qr">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23f0f0f0'/%3E%3Ctext x='20' y='80' font-family='Arial' font-size='14' fill='%23333'%3EQr Code%3C/text%3E%3C/svg%3E" alt="QR Code">
+        </div>
+        
+        <div class="label-actions">
+            <button class="label-print" onclick="window.print()"><i class="fas fa-print"></i> Print Label</button>
+            <button class="label-download" id="download-label-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
